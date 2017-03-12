@@ -16,24 +16,24 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
-
+    <link href="{% static "css/heuristic.css"%}" rel="stylesheet">
 </head>
 <body>
+<script src="{% static "js/jquery-3.1.1.js" %}"></script>
 <script src="{% static "js/bootstrap.js" %}"></script>
-
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">LoginHeuristic</a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url "index" %}">Home <span class="sr-only">(current)</span></a>
-                </li>
-                {% comment %}<li class="nav-item dropdown">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">LoginHeuristic</a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url "index" %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            {% comment %}<li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown link
@@ -44,8 +44,8 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </li>{% endcomment %}
-            </ul>
-{% comment %}            <ul class="navbar-nav">
+        </ul>
+        {% comment %}            <ul class="navbar-nav">
                 <li class="nav-item {% active_handler "login" %}">
                     <a class="nav-link" href="{% url "login" %}">Login</a>
                 </li>
@@ -53,8 +53,8 @@
                     <a class="nav-link" href="{% url "register" %}">Register</a>
                 </li>
             </ul>{% endcomment %}
-        </div>
-    </nav>
+    </div>
+</nav>
 
 {% block body_block %}
 

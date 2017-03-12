@@ -1,10 +1,24 @@
 {% extends "heuristic_server/base.html" %}
-
+{% load staticfiles %}
 
 {% block title_block %}
     Index
 {% endblock %}
 
 {% block body_block %}
-    Test
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="center-container">
+                    <button id="fingerprint" class="btn btn-outline-primary">Fingerprint me</button>
+                    <input type="text" name="test" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static "js/fingerprint2.min.js" %}"></script>
+    <script src="{% static "js/fingerprint.js" %}"></script>
+
+
 {% endblock %}
